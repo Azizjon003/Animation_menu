@@ -1,6 +1,17 @@
+@mixin phone {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
 * {
   margin: 0;
   padding: 0;
+}
+html {
+  font-size: 100%;
+  @include phone {
+    font-size: 50%;
+  }
 }
 body {
   display: flex;
