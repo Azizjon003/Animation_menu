@@ -45,7 +45,7 @@ body {
   z-index: 10;
   left: 3.5rem;
   top: 1rem;
-  transform: translate(0, 0);
+
   p {
     opacity: 0;
     visibility: hidden;
@@ -125,7 +125,6 @@ body {
   -webkit-outline: 0.8rem solid #eee;
   z-index: 1;
   transition: all 1s;
-  transform: rotateY(0deg);
 }
 input {
   opacity: 0;
@@ -194,6 +193,7 @@ input {
 }
 #checkbox_4:checked ~ .circle {
   left: 35.5rem;
+  // animation: uchar 1.2s;
 }
 @keyframes text {
   0% {
@@ -216,4 +216,14 @@ input {
   }
 }
 @keyframes uchar {
+  // 0%,
+  // 100% {
+  //   transform: translate(0, 0);
+  // }
+  35% {
+    transform: translate(0, -8rem);
+  }
+  // 50% {
+  //   transform: translate(0, -12rem);
+  // }
 }

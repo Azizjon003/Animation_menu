@@ -45,7 +45,6 @@ body {
   z-index: 10;
   left: 3.5rem;
   top: 1rem;
-  transform: translate(0, 0);
   transition: all 1s;
 }
 .home p {
@@ -129,7 +128,6 @@ body {
   -webkit-outline: 0.8rem solid #eee;
   z-index: 1;
   transition: all 1s;
-  transform: rotateY(0deg);
 }
 
 input {
@@ -232,6 +230,10 @@ input {
     color: #10d130;
   }
 }
-@keyframes uchar {}
+@keyframes uchar {
+  35% {
+    transform: translate(0, -8rem);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
