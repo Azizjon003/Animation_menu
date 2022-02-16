@@ -37,6 +37,7 @@ body {
 .animation_section p {
   margin-top: 0.5rem;
   font-size: 1.4rem;
+  color: #10d130;
 }
 
 .home {
@@ -44,6 +45,7 @@ body {
   z-index: 10;
   left: 3.5rem;
   top: 1rem;
+  transform: translate(0, 0);
   transition: all 1s;
 }
 .home p {
@@ -112,6 +114,7 @@ body {
   transition: all 0.5s;
   position: relative;
   top: 2rem;
+  color: #16d630;
 }
 
 .circle {
@@ -123,8 +126,10 @@ body {
   left: 3rem;
   top: -3rem;
   outline: 0.8rem solid #eee;
+  -webkit-outline: 0.8rem solid #eee;
   z-index: 1;
   transition: all 1s;
+  transform: rotateY(0deg);
 }
 
 input {
@@ -133,13 +138,14 @@ input {
 }
 
 #checkbox:checked ~ .home {
-  top: -1.5rem;
+  top: -1.2rem;
 }
 
 #checkbox:checked ~ .home .home_section_text {
   opacity: 1;
   visibility: visible;
   top: 1.8rem;
+  animation: text 1s ease-in-out;
 }
 
 #checkbox:checked ~ .circle {
@@ -147,13 +153,14 @@ input {
 }
 
 #checkbox_1:checked ~ .profil {
-  top: -1.5rem;
+  top: -1.2rem;
 }
 
 #checkbox_1:checked ~ .profil .profil_text {
   opacity: 1;
   visibility: visible;
   top: 1.5rem;
+  animation: text 1s ease-in-out;
 }
 
 #checkbox_1:checked ~ .circle {
@@ -161,13 +168,14 @@ input {
 }
 
 #checkbox_2:checked ~ .message {
-  top: -1.5rem;
+  top: -1.2rem;
 }
 
 #checkbox_2:checked ~ .message .message_section_text {
   opacity: 1;
   visibility: visible;
   top: 1.5rem;
+  animation: text 1s ease-in-out;
 }
 
 #checkbox_2:checked ~ .circle {
@@ -175,13 +183,14 @@ input {
 }
 
 #checkbox_3:checked ~ .photo {
-  top: -1.5rem;
+  top: -1.2rem;
 }
 
 #checkbox_3:checked ~ .photo .photo_section_text {
   opacity: 1;
   visibility: visible;
   top: 1.5rem;
+  animation: text 1s ease-in-out;
 }
 
 #checkbox_3:checked ~ .circle {
@@ -189,17 +198,40 @@ input {
 }
 
 #checkbox_4:checked ~ .settings {
-  top: -1.5rem;
+  top: -1.2rem;
 }
 
 #checkbox_4:checked ~ .settings .settings_section_text {
   opacity: 1;
   visibility: visible;
   top: 1.5rem;
+  animation: text 1s ease-in-out;
 }
 
 #checkbox_4:checked ~ .circle {
   left: 35.5rem;
 }
+
+@keyframes text {
+  0% {
+    opacity: 0;
+    color: white;
+  }
+  25% {
+    opacity: 0.3;
+    color: white;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    color: #10d130;
+  }
+}
+@keyframes uchar {}
 
 /*# sourceMappingURL=style.css.map */
