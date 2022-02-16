@@ -141,6 +141,7 @@ input {
 }
 #checkbox:checked ~ .circle {
   left: 2.5rem;
+  animation: uchar_5 1.2s;
 }
 
 #checkbox_1:checked ~ .profil {
@@ -154,6 +155,7 @@ input {
 }
 #checkbox_1:checked ~ .circle {
   left: 11rem;
+  animation: uchar_4 1.2s;
 }
 
 #checkbox_2:checked ~ .message {
@@ -167,6 +169,7 @@ input {
 }
 #checkbox_2:checked ~ .circle {
   left: 20rem;
+  animation: uchar_3 1.2s;
 }
 
 #checkbox_3:checked ~ .photo {
@@ -180,6 +183,7 @@ input {
 }
 #checkbox_3:checked ~ .circle {
   left: 27rem;
+  animation: uchar_2 1.2s;
 }
 
 #checkbox_4:checked ~ .settings {
@@ -193,7 +197,7 @@ input {
 }
 #checkbox_4:checked ~ .circle {
   left: 35.5rem;
-  // animation: uchar 1.2s;
+  animation: uchar 1.2s;
 }
 @keyframes text {
   0% {
@@ -216,14 +220,50 @@ input {
   }
 }
 @keyframes uchar {
-  // 0%,
-  // 100% {
-  //   transform: translate(0, 0);
-  // }
-  35% {
-    transform: translate(0, -8rem);
+  0%,
+  100% {
+    transform: translate(0, 0);
   }
-  // 50% {
-  //   transform: translate(0, -12rem);
-  // }
+  40% {
+    top: calc(((20.5 - 2.5) / 2) * -1rem);
+  }
+}
+
+@keyframes uchar_2 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  40% {
+    top: calc(((15.5 - 2.5) / 2) * -1rem);
+  }
+}
+@keyframes uchar_3 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  40% {
+    top: calc(((14.5 - 2.5) / 2) * -1rem);
+  }
+}
+
+@keyframes uchar_4 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  40% {
+    top: calc(((13.5 - 2.5) / 2) * -1rem);
+  }
+}
+
+@keyframes uchar_5 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  40% {
+    top: calc(((12.5 - 2.5) / 2) * -1rem);
+  }
 }

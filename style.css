@@ -148,6 +148,7 @@ input {
 
 #checkbox:checked ~ .circle {
   left: 2.5rem;
+  animation: uchar_5 1.2s;
 }
 
 #checkbox_1:checked ~ .profil {
@@ -163,6 +164,7 @@ input {
 
 #checkbox_1:checked ~ .circle {
   left: 11rem;
+  animation: uchar_4 1.2s;
 }
 
 #checkbox_2:checked ~ .message {
@@ -178,6 +180,7 @@ input {
 
 #checkbox_2:checked ~ .circle {
   left: 20rem;
+  animation: uchar_3 1.2s;
 }
 
 #checkbox_3:checked ~ .photo {
@@ -193,6 +196,7 @@ input {
 
 #checkbox_3:checked ~ .circle {
   left: 27rem;
+  animation: uchar_2 1.2s;
 }
 
 #checkbox_4:checked ~ .settings {
@@ -208,6 +212,7 @@ input {
 
 #checkbox_4:checked ~ .circle {
   left: 35.5rem;
+  animation: uchar 1.2s;
 }
 
 @keyframes text {
@@ -231,8 +236,43 @@ input {
   }
 }
 @keyframes uchar {
-  35% {
-    transform: translate(0, -8rem);
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  40% {
+    top: -9rem;
+  }
+}
+@keyframes uchar_2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  40% {
+    top: -6.5rem;
+  }
+}
+@keyframes uchar_3 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  40% {
+    top: -6rem;
+  }
+}
+@keyframes uchar_4 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  40% {
+    top: -5.5rem;
+  }
+}
+@keyframes uchar_5 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  40% {
+    top: -5rem;
   }
 }
 
